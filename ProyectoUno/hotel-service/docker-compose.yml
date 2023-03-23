@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:latest
+    container_name: PostgreSQLMicroservices
+    restart: always
+    environment:
+      POSTGRES_USER: juan
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: microservicios
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_mcsv_data:/var/lib/postgresql/data
+volumes:
+  postgres_mcsv_data:
