@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/HotelServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/HotelServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate-service/src/main/java/com/bosonit/rateservice/RateServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/src/main/java/com/bosonit/rateservice/RateServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/registry-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/UsuarioServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/UsuarioServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2NKsgjhMEl7IfLTlJ5J1dxFrXHB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/juanjose.jasso/Documents/Repositorios/Microservicios/ProyectoUno/user-service"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanjose.jasso/Documents/Repositorios/Microservicios/ProyectoUno/user-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.RateServiceApplication">
+    <configuration name="HotelServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.hotelservice.HotelServiceApplication" />
+      <module name="hotel-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.hotelservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RateServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.rateservice.RateServiceApplication" />
+      <module name="rate-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.rateservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.registryservice.RegistryServiceApplication" />
+      <module name="registry-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.registryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.userservice.UsuarioServiceApplication" />
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UsuarioServiceApplication" />
+        <item itemvalue="Application.RateServiceApplication" />
+        <item itemvalue="Application.HotelServiceApplication" />
+        <item itemvalue="Application.RegistryServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
