@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/microservicios
+    url: jdbc:postgresql://localhost:5432/hotel-service
     username : juan
     password: root
   jpa:

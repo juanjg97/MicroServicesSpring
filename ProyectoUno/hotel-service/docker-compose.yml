@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: juan
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: microservicios
+      POSTGRES_DB: hotel-service
     ports:
       - "5432:5432"
     volumes:

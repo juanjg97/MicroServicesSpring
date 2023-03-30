@@ -1,8 +1,11 @@
 package com.bosonit.userservice.entities;
 
+import com.bosonit.userservice.models.Rate;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -19,4 +22,6 @@ public class User {
     private String email;
     private String information;
 
+    @Transient
+    private List<Rate> rates = new ArrayList<>();
 }

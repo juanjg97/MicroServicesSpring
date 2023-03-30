@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: microservicios
+      MYSQL_DATABASE: user-service
       MYSQL_USER: juan
       MYSQL_PASSWORD: root
     ports:
