@@ -22,10 +22,16 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.saveUser(userRequest));
     }
 
-    @Operation(summary = "Get a user from database")
-    @GetMapping("/{userId}")
-    public ResponseEntity<User> getUser(@PathVariable String userId){
-        return ResponseEntity.status(HttpStatus.OK).body(userService.getUser(userId));
+    @Operation(summary = "Get a user from database using restTemplate")
+    @GetMapping("/rest-template/{userId}")
+    public ResponseEntity<User> getUserRT(@PathVariable String userId){
+        return ResponseEntity.status(HttpStatus.OK).body(userService.getUserWithRestTemplate(userId));
+    }
+
+    @Operation(summary = "Get a user from database using FeignClient")
+    @GetMapping("/feign-client/{userId}")
+    public ResponseEntity<User> getUserFC(@PathVariable String userId){
+        return ResponseEntity.status(HttpStatus.OK).body(userService.getUserWithFeignClient(userId));
     }
 
     @Operation(summary = "Get all users from database")

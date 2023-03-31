@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "HOTEL-SERVICE")
-public interface HotelServiceF {
+public interface HotelServiceFeign {
+
+    //Obten el hotel por id desde el servicio de hotel
     @GetMapping("/api/hotels/{hotelId}")
     Hotel getHotel(@PathVariable String hotelId);
 }

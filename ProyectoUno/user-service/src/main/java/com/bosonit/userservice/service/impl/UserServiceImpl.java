@@ -2,6 +2,8 @@ package com.bosonit.userservice.service.impl;
 
 import com.bosonit.userservice.entities.User;
 import com.bosonit.userservice.exceptions.ResourceNotFoundException;
+import com.bosonit.userservice.feign.config.HotelServiceFeign;
+import com.bosonit.userservice.feign.config.RateServiceFeign;
 import com.bosonit.userservice.models.Hotel;
 import com.bosonit.userservice.models.Rate;
 import com.bosonit.userservice.repositories.UserRepository;
@@ -23,6 +25,8 @@ import java.util.stream.Collectors;
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     private RestTemplate restTemplate;
+    private HotelServiceFeign hotelService;
+    private RateServiceFeign rateService;
 
     @Override
     public User saveUser(User user) {
@@ -35,13 +39,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUser(String userId) {
+    public User getUserWithRestTemplate(String userId) {
 
         // Busca el usuario por su ID, en este momento el usuario no tiene seteado la calificación
         User user = userRepository.findById(Long.valueOf(userId)).orElseThrow(() -> new ResourceNotFoundException("User not found with id " + userId));
 
         //Ahora primero vamos a setear la calificacióin en el usuario
-        String endpointGetRateByUserId = "http://localhost:8083/api/rate/users/" + user.getUserId().toString();
+        //Aplicando balanceo de carga ya no es necesario especificar el puerto
+        String endpointGetRateByUserId = "http://RATE-SERVICE/api/rate/users/" + user.getUserId().toString();
 
         // Obtiene las calificaciones del usuario utilizando la API externa en forma de array y las pasamos a una lista
         Rate[] ratesByUserArray = restTemplate.getForObject(endpointGetRateByUserId, Rate[].class);
@@ -50,7 +55,7 @@ public class UserServiceImpl implements UserService {
         // Para cada calificación, obtiene la información del hotel que fue calificado
         List<Rate> ratesByUserWithHotelList = ratesByUserList.stream().map(rate -> {
 
-            String endpointGetHotelByRateId = "http://localhost:8082/api/hotels/" + rate.getIdHotel();
+            String endpointGetHotelByRateId = "http://HOTEL-SERVICE/api/hotels/" + rate.getIdHotel();
             ResponseEntity<Hotel> hotelResponseEntity = restTemplate.getForEntity(endpointGetHotelByRateId, Hotel.class);
             Hotel hotel = hotelResponseEntity.getBody();
 
@@ -63,5 +68,24 @@ public class UserServiceImpl implements UserService {
         user.setRates(ratesByUserWithHotelList);
         return user;
     }
+
+    @Override
+    public User getUserWithFeignClient(String userId) {
+
+        User user = userRepository.findById(Long.valueOf(userId)).orElseThrow(() -> new ResourceNotFoundException("User not found with id " + userId));
+
+        List<Rate> ratesByUserList = rateService.getRatesByUserId(user.getUserId().toString());
+
+        List<Rate> ratesByUserWithHotelList = ratesByUserList.stream().map(rate -> {
+            Hotel hotel = hotelService.getHotel(rate.getIdHotel());
+            rate.setHotel(hotel);
+            return rate;
+        }).collect(Collectors.toList());
+
+        user.setRates(ratesByUserWithHotelList);
+        return user;
+    }
+
+
 
 }
