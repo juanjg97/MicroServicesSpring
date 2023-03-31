@@ -1,4 +1,4 @@
-package com.bosonit.hotelservice.controller;
+package com.bosonit.hotelservice.controllers;
 
 import com.bosonit.hotelservice.entity.Hotel;
 import com.bosonit.hotelservice.service.HotelService;

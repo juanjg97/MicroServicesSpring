@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Se conexión con Feign Client">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman">
+      <change afterPath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controllers/ExampleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/feign/config/HotelServiceFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/feign/config/HotelServiceFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/feign/config/RateServiceFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/feign/config/RateServiceFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/models/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/resttemplate/models/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/models/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/resttemplate/models/Rate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controllers/HotelController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RateServiceApplication" />
-        <item itemvalue="Application.UsuarioServiceApplication" />
         <item itemvalue="Application.HotelServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.EurekaRegistryServiceApplication" />
+        <item itemvalue="Application.RateServiceApplication" />
+        <item itemvalue="Application.UsuarioServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680286521624</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman">
+      <created>1680290549433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680290549434</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,6 +179,7 @@
     <MESSAGE value="Se comenta código en UserServiceImpl" />
     <MESSAGE value="Se implementa balanceo de carga con RestTemplate" />
     <MESSAGE value="Se conexión con Feign Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se conexión con Feign Client" />
+    <MESSAGE value="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman" />
   </component>
 </project>
