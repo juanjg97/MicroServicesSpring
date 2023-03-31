@@ -1,10 +1,10 @@
-package com.bosonit.registryservice;
+package com.bosonit.eurekaregistryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RegistryServiceApplicationTests {
+class EurekaRegistryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

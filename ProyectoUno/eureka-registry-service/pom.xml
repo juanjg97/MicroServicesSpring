@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bosonit</groupId>
-	<artifactId>registry-service</artifactId>
+	<artifactId>eureka-registry-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>registry-service</name>
 	<description>Demo project for Spring Boot</description>
