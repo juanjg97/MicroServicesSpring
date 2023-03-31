@@ -1,6 +1,6 @@
 package com.bosonit.userservice.entities;
 
-import com.bosonit.userservice.models.Rate;
+import com.bosonit.userservice.resttemplate.models.Rate;
 import lombok.*;
 
 import javax.persistence.*;

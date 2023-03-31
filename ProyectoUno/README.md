@@ -1,8 +1,10 @@
-- hotel-service: 8082
+- DB-RATEL-SERVICE-MONGDB: 8080
 - user-service: 8081
+- hotel-service: 8082
 - rate-service: 8083
+- api-gateway: 8084
 - eureka-server: 8761
 - --------------
-- DB-HOTEL-SERVICE-POSTGRESQL: 5432
 - DB-USER-SERVICE-MYSQL: 3306
-- DB-RATEL-SERVICE-MONGDB: 8080
+- DB-HOTEL-SERVICE-POSTGRESQL: 5432
+

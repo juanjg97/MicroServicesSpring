@@ -1,4 +1,4 @@
-package com.bosonit.userservice.models;
+package com.bosonit.userservice.resttemplate.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,5 +15,5 @@ public class Rate {
     private String idHotel;
     private int rate;
     private String observation;
-    private  Hotel hotel;
+    private Hotel hotel;
 }

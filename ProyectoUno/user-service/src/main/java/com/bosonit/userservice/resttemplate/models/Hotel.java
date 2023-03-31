@@ -1,4 +1,4 @@
-package com.bosonit.userservice.models;
+package com.bosonit.userservice.resttemplate.models;
 
 import lombok.*;
 

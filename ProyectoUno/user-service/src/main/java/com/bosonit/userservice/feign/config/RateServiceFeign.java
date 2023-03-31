@@ -1,7 +1,6 @@
 package com.bosonit.userservice.feign.config;
 
-import com.bosonit.userservice.models.Hotel;
-import com.bosonit.userservice.models.Rate;
+import com.bosonit.userservice.resttemplate.models.Rate;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +13,7 @@ public interface RateServiceFeign {
     @GetMapping("/api/rate/users/{idUser}")
     List<Rate> getRatesByUserId(@PathVariable String idUser);
 
-    //TODO: Implementar los demás métodos
+    /*
 
     @PostMapping
     public ResponseEntity<Rate> saveRate(Rate rate);
@@ -24,5 +23,7 @@ public interface RateServiceFeign {
 
     @DeleteMapping
     public ResponseEntity<Rate> deleteRate(@PathVariable String idRate);
+    */
+
 
 }
