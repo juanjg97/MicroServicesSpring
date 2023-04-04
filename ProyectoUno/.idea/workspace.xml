@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman">
-      <change afterPath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controllers/ExampleController.java" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/java/com/bosonit/hotelservice/controllers/HotelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/api-gateway",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/config-server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.UsuarioServiceApplication">
+}</component>
+  <component name="RunManager" selected="Application.RateServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bosonit.api.gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -64,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaRegistryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bosonit.eurekaregistryservice.EurekaRegistryServiceApplication" />
-      <module name="eureka-registry-service" />
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.config.server.ConfigServerApplication" />
+      <module name="config-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bosonit.eurekaregistryservice.*" />
+          <option name="PATTERN" value="com.bosonit.config.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HotelServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.EurekaRegistryServiceApplication" />
         <item itemvalue="Application.RateServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.HotelServiceApplication" />
         <item itemvalue="Application.UsuarioServiceApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680290549434</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway">
+      <created>1680290994889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680290994889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +193,7 @@
     <MESSAGE value="Se implementa balanceo de carga con RestTemplate" />
     <MESSAGE value="Se conexión con Feign Client" />
     <MESSAGE value="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman" />
+    <MESSAGE value="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway" />
   </component>
 </project>

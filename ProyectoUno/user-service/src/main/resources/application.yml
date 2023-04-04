@@ -9,6 +9,10 @@ spring:
     driver: com.mysql.cj.jdbc.Driver
   application:
     name: USER-SERVICE
+  config:
+    import: configserver:http://localhost:8085
+  profiles:
+    active: prod
   jpa:
     hibernate:
       ddl-auto: update
@@ -21,12 +25,3 @@ logging:
   level:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka

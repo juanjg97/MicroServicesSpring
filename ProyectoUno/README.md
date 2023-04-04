@@ -3,6 +3,7 @@
 - hotel-service: 8082
 - rate-service: 8083
 - api-gateway: 8084
+- config-server: 8085
 - eureka-server: 8761
 - --------------
 - DB-USER-SERVICE-MYSQL: 3306
