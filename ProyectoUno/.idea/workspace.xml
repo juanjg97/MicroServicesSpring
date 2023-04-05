@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de tolerancia de fallos con circuit braker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rate-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rate-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,10 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RateServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.HotelServiceApplication" />
         <item itemvalue="Application.UsuarioServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.RateServiceApplication" />
+        <item itemvalue="Application.HotelServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -183,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680290994889</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementación de config-server">
+      <created>1680643621937</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680643621937</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +196,8 @@
     <MESSAGE value="Se conexión con Feign Client" />
     <MESSAGE value="Se implementa Gateway en el puerto 8084, se actualiza la colección de Postman" />
     <MESSAGE value="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway" />
+    <MESSAGE value="Implementación de config-server" />
+    <MESSAGE value="Implementación de tolerancia de fallos con circuit braker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de tolerancia de fallos con circuit braker" />
   </component>
 </project>
