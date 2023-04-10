@@ -283,6 +283,16 @@
 				{
 					"name": "GetAllUsers",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWFuYSIsImlkIjoyLCJpYXQiOjE2ODExNTQ2MzYsImV4cCI6MTY4MTE1ODIzNn0.L9QSgQtr1XWJAEtbUQlCImAGYpaTc7-J2bpVhPbLSyU",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -306,7 +316,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8084/api/users/rest-template/1",
+							"raw": "http://localhost:8084/api/users/rest-template/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -316,7 +326,7 @@
 								"api",
 								"users",
 								"rest-template",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -382,6 +392,14 @@
 								"1"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "SecondController",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				},
@@ -504,6 +522,112 @@
 								"rate"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateAuthUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"diana\",\r\n    \"password\":\"root\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/auth/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"auth",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"diana\",\r\n    \"password\":\"root\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthValidate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/auth/validate?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWFuYSIsImlkIjoyLCJpYXQiOjE2ODExNTQ2MzYsImV4cCI6MTY4MTE1ODIzNn0.L9QSgQtr1XWJAEtbUQlCImAGYpaTc7-J2bpVhPbLSyU",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"auth",
+								"validate"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWFuYSIsImlkIjoyLCJpYXQiOjE2ODExNTQ2MzYsImV4cCI6MTY4MTE1ODIzNn0.L9QSgQtr1XWJAEtbUQlCImAGYpaTc7-J2bpVhPbLSyU"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Config-Server",
+			"item": [
+				{
+					"name": "Config-Server",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}

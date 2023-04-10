@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 1">
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/NewUserInputDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 2">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/config/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/dto/TokenInputDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/SecurityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/SecurityServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +58,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RateServiceApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bosonit.api.gateway.ApiGatewayApplication" />
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosonit.api.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SecurityServiceApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bosonit.config.server.ConfigServerApplication" />
       <module name="config-server" />
@@ -106,6 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SecurityServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.security.service.SecurityServiceApplication" />
+      <module name="security-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.security.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsuarioServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bosonit.userservice.UsuarioServiceApplication" />
       <module name="user-service" />
@@ -121,10 +126,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UsuarioServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.SecurityServiceApplication" />
         <item itemvalue="Application.RateServiceApplication" />
         <item itemvalue="Application.HotelServiceApplication" />
+        <item itemvalue="Application.UsuarioServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -201,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681148852906</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implementación de seguridad parte 2">
+      <created>1681149758130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681149758130</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +239,7 @@
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker" />
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker y retry" />
     <MESSAGE value="Implementación de seguridad parte 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 1" />
+    <MESSAGE value="Implementación de seguridad parte 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 2" />
   </component>
 </project>
