@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de tolerancia de fallos con circuit braker y retry">
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/AuthUserInputDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/TokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/entity/AuthUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/repository/AuthUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/PasswordEncoderConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 1">
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/NewUserInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -198,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680653230127</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementación de seguridad parte 1">
+      <created>1681148852906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681148852906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +226,7 @@
     <MESSAGE value="Implementación de config-server" />
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker" />
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker y retry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de tolerancia de fallos con circuit braker y retry" />
+    <MESSAGE value="Implementación de seguridad parte 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 1" />
   </component>
 </project>
