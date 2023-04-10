@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de tolerancia de fallos con circuit braker">
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de tolerancia de fallos con circuit braker y retry">
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/AuthUserInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/entity/AuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/repository/AuthUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/PasswordEncoderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -41,16 +47,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/config-server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/security-service",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.RateServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bosonit.api.gateway.ApiGatewayApplication" />
@@ -185,8 +191,26 @@
       <option name="project" value="LOCAL" />
       <updated>1680643621937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementación de tolerancia de fallos con circuit braker y retry">
+      <created>1680653230127</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680653230127</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se hace la conexión de los servicios con EurekaServer" />
@@ -198,6 +222,7 @@
     <MESSAGE value="Se implementa un segundo controlador en el hotel-service para ver cómo conectarlo al api-gateway" />
     <MESSAGE value="Implementación de config-server" />
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de tolerancia de fallos con circuit braker" />
+    <MESSAGE value="Implementación de tolerancia de fallos con circuit braker y retry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de tolerancia de fallos con circuit braker y retry" />
   </component>
 </project>
