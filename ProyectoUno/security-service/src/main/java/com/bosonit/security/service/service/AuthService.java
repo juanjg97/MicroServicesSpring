@@ -2,6 +2,7 @@ package com.bosonit.security.service.service;
 
 import com.bosonit.security.service.dto.AuthUserInputDto;
 import com.bosonit.security.service.dto.NewUserInputDto;
+import com.bosonit.security.service.dto.RequestDto;
 import com.bosonit.security.service.dto.TokenDto;
 import com.bosonit.security.service.entity.AuthUser;
 import com.bosonit.security.service.repository.AuthUserRepository;
@@ -48,8 +49,8 @@ public class AuthService {
         return null;
     }
 
-    public TokenDto validateToken(String token){
-        if(!jwtProvider.validate(token)){
+    public TokenDto validateToken(String token, RequestDto requestDto){
+        if(!jwtProvider.validate(token,requestDto)){
             return null;
         }
         String userName = jwtProvider.getUserNameFromToken(token);

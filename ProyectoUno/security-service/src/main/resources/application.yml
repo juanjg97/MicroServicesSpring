@@ -35,3 +35,11 @@ logging:
 
 jwt:
   secret: secret
+admin-paths:
+  paths:
+    -
+      uri: "/api/users"
+      method: "POST"
+    -
+      uri: "/api/users/\\{userId\\}"
+      method: "DELETE"

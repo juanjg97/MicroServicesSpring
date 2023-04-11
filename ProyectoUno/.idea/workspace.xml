@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 2">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/config/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/config/WebClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/dto/TokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/dto/TokenInputDto.java" afterDir="false" />
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 3 y actualización de la conexión de Postman">
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/RequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/RouteValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/SecurityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/SecurityServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/security-service",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanjose.jasso/Documents/Repositorios/MicroServicesSpring/ProyectoUno/security-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.SecurityServiceApplication">
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bosonit.config.server.ConfigServerApplication" />
-      <module name="config-server" />
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.api.gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bosonit.config.server.*" />
+          <option name="PATTERN" value="com.bosonit.api.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,10 +127,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SecurityServiceApplication" />
+        <item itemvalue="Application.UsuarioServiceApplication" />
         <item itemvalue="Application.RateServiceApplication" />
         <item itemvalue="Application.HotelServiceApplication" />
-        <item itemvalue="Application.UsuarioServiceApplication" />
-        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681149758130</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implementación de seguridad parte 3 y actualización de la conexión de Postman">
+      <created>1681154833980</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681154833980</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +247,18 @@
     <MESSAGE value="Implementación de tolerancia de fallos con circuit braker y retry" />
     <MESSAGE value="Implementación de seguridad parte 1" />
     <MESSAGE value="Implementación de seguridad parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 2" />
+    <MESSAGE value="Implementación de seguridad parte 3 y actualización de la conexión de Postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 3 y actualización de la conexión de Postman" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-gateway/src/main/java/com/bosonit/api/gateway/config/AuthFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

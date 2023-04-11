@@ -86,6 +86,15 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    @Override
+    public String deleteUser(String userId) {
+        User user = userRepository.findById(Long.valueOf(userId)).orElseThrow(
+                () -> new ResourceNotFoundException("User not found with id " + userId));
+        String userName = user.getName();
+        userRepository.deleteById(Long.valueOf(userId));
+
+        return "Se ha eliminado el usuario: "+userName;
+    }
 
 
 }

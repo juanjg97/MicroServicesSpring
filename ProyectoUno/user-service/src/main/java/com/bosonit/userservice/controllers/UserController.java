@@ -47,6 +47,12 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(userService.getAllUsers());
     }
 
+ /*   @Operation(summary = "Delete a user from the database")
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<?> deleteUserById(@PathVariable String userId){
+        return ResponseEntity.status(HttpStatus.OK).body(userService.deleteUser(userId));
+    }*/
+
     public ResponseEntity<User> ratingHotelFallback(String usuarioId,Exception exception){
         log.info("El respaldo se ejecuta porque el servicio esta inactivo : ",exception.getMessage());
         User usuario = User.builder()

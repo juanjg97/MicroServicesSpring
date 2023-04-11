@@ -9,4 +9,5 @@ public interface UserService {
     List<User> getAllUsers();
     User getUserWithRestTemplate(String userId);
    User getUserWithFeignClient(String userId);
+   String deleteUser(String userId);
 }

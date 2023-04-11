@@ -2,6 +2,7 @@ package com.bosonit.security.service.controller;
 
 import com.bosonit.security.service.dto.AuthUserInputDto;
 import com.bosonit.security.service.dto.NewUserInputDto;
+import com.bosonit.security.service.dto.RequestDto;
 import com.bosonit.security.service.dto.TokenDto;
 import com.bosonit.security.service.entity.AuthUser;
 import com.bosonit.security.service.service.AuthService;
@@ -26,8 +27,8 @@ public class AuthController {
     }
 
     @PostMapping("/validate")
-    public ResponseEntity<?> validate(@RequestParam String token){
-        TokenDto tokenDto = authService.validateToken(token);
+    public ResponseEntity<TokenDto> validate(@RequestParam String token, @RequestBody RequestDto requestDto){
+        TokenDto tokenDto = authService.validateToken(token,requestDto);
         if(tokenDto == null){
             return ResponseEntity.badRequest().build();
         }
