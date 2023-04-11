@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  mongodb_mcsv:
+    image: mongo
+    container_name: mongodb_mcsv_p2
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=rootuser
+      - MONGO_INITDB_ROOT_PASSWORD=rootpass
+    volumes:
+      - mongodb_mcsv:/data/db
+  mongodb_express_mcsv:
+    image: mongo-express
+    container_name: mongodb_express_mcsv_p2
+    restart: always
+    ports:
+      - 8080:8081
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=rootuser
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=rootpass
+      - ME_CONFIG_MONGODB_SERVER=mongodb_mcsv_p2
+networks:
+  default:
+    name: mongodb_mcsv_network
+
+volumes:
+  mongodb_mcsv:

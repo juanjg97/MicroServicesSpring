@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 3 y actualización de la conexión de Postman">
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/dto/RequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/RouteValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/security/JwtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/bosonit/security/service/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bosonit/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="64c0428b-fa90-49df-a594-bac6b06f67df" name="Changes" comment="Implementación de seguridad parte 4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681154833980</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implementación de seguridad parte 4">
+      <created>1681227756132</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681227756132</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +244,8 @@
     <MESSAGE value="Implementación de seguridad parte 1" />
     <MESSAGE value="Implementación de seguridad parte 2" />
     <MESSAGE value="Implementación de seguridad parte 3 y actualización de la conexión de Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 3 y actualización de la conexión de Postman" />
+    <MESSAGE value="Implementación de seguridad parte 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de seguridad parte 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

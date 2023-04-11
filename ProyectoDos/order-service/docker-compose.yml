@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:latest
+    container_name: order_service_p2
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: order_service_p2
+      MYSQL_USER: juan
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - order_service_p2_data:/var/lib/mysql
+volumes:
+  order_service_p2_data:
